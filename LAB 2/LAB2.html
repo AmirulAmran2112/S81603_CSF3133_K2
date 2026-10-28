@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!-- TASK 3: Use semantic HTML (Header & Nav) -->
+    <header>
+        <h1>Welcome to My Personal Profile</h1>
+        <p>A simple webpage showcasing my background and contact form.</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#table-section">Profile Table</a></li>
+                <li><a href="#contact-form">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- TASK 3: Use semantic HTML (Section & Article) -->
+    <section id="about">
+        <article>
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate learner exploring web development, coding, and building interactive web pages using semantic HTML.</p>
+        </article>
+    </section>
+
+    <!-- TASK 1: Create a table (At least 3 rows and 3 columns with personal info) -->
+    <section id="table-section">
+        <h2>Personal Information Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Details</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Amirul Amran</td>
+                    <td>General</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>21</td>
+                    <td>General</td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>Web Developer</td>
+                    <td>Professional</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- TASK 2: Design a simple form (Name, email, gender, hobbies, text input, radios, checkboxes, submit) -->
+    <section id="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="POST">
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <div>
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- TASK 3: Use semantic HTML (Footer) -->
+    <footer>
+        <p>&copy; 2026 Personal Profile Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
