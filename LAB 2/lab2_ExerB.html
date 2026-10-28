@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Course Feedback </title>
+    </head>
+
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+        <!-- Error 1: Used (head) insted of (header). -->
+    </header>
+
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <section id = "results">
+        <h2> Feedback Summary</h2>
+        <table border = "1">
+            <tr>
+                <th> Week </th>
+                <th> Topic </th>
+                <!-- Error 2: Used <td> instead of <th> for Rating. -->
+                <th> Rating </th>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> Introduction to HTML </td>
+                <td> 4.5 </td>
+                <!-- Error 3: Used <tr> instead of </tr> for the Week 1 Row. -->
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <!-- Error 4: Incorrect colspan="3" caused an extra table column. -->
+                <td> Tables and Forms </td>
+                <td> 4.0 </td>
+            </tr>
+            <tr>
+                <td> 3 </td>
+                <!-- Error 5: Missing </td> after Semantic HTML. -->
+                <td> Semantic HTML </td>
+                <td> 4.0 </td>
+            </tr>
+             <!-- The Mini Project topic spans Weeks 4 and 5 -->
+                <tr>
+                    <td>4</td>
+                    <td rowspan="2">Mini Project</td>
+                    <td>4.5</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>4.5</td>
+                </tr>
+                <!-- Average Rating spans the first two columns -->
+                <tr>
+                    <td colspan="2"><strong>Average Rating</strong></td>
+                    <td>4.3</td>
+                </tr>
+        </table>
+    </section>
+
+    <section id = "form">
+        <h2> Give Your Feedback</h2>
+        <form action = "submit_feedback.php"  method = "post">
+            <label for = "fullname"> Name: </label>
+            <!-- Error 6: Label for="name" did not match input id="fullname". -->
+            <input type = "text" id = "fullname" name = "fullname" required> <br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Error 7: Overall rating label was not associated with its controls. -->
+           <p>Overall Rating:</p>
+
+            <input type="radio" id="good" name="rating" value="good" required>
+            <label for="good">Good</label>
+            <br>
+
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+            <br>
+
+             <!-- Error 8: Radio buttons used different names, allowing multiple selections. -->
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label>
+            <br>
+     
+            <!-- Error 9: Label for="labs" did not match input id="lab". -->
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label>
+            <br>
+
+            <!-- Checkboxes: Topics I want more practice on -->
+            <p>Topics I want more practice on:</p>
+
+            <input type="checkbox" id="html" name="practice[]" value="HTML">
+            <label for="html">Introduction to HTML</label>
+            <br>
+
+            <input type="checkbox" id="tables" name="practice[]" value="Tables and Forms">
+            <label for="tables">Tables and Forms</label>
+            <br>
+
+            <input type="checkbox" id="semantic" name="practice[]" value="Semantic HTML">
+            <label for="semantic">Semantic HTML</label>
+            <br>
+
+            <input type="checkbox" id="project" name="practice[]" value="Mini Project">
+            <label for="project">Mini Project</label>
+            <br>
+
+            <!-- Dropdown list for Section -->
+            <p>
+                <label for="section">Section:</label>
+                <select id="section" name="section" required>
+                    <option value="">-- Select Section --</option>
+                    <option value="Section 1">Section 1</option>
+                    <option value="Section 2">Section 2</option>
+                    <option value="Section 3">Section 3</option>
+                    <option value="Section 4">Section 4</option>
+                </select>
+            </p>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+    
+    <!-- Student Comments Section -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+
+        <!-- First student comment -->
+        <article>
+            <h3>Amirul Amran</h3>
+            <p>
+                The Introduction to HTML lessons were helpful.
+                I enjoyed learning how to create web pages.
+            </p>
+        </article>
+
+        <!-- Second student comment -->
+        <article>
+            <h3>Nur Ain Zureen</h3>
+            <p>
+                Tables, forms and semantic HTML helped me
+                understand how to organise a website properly.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <!-- Error 10: Missing closing parenthesis in copyright notice. -->
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
