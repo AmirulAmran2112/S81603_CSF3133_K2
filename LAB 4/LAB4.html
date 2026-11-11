@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - Responsive Web Page</title>
+    <!-- External CSS link requirement -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Responsive Web Page</h1>
+        <p>Welcome to Lab Exercise 4 showcasing HTML5 and CSS styling.</p>
+    </header>
+
+    <!-- Navigation Bar: Unordered list styled with CSS -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <main>
+        <section id="about">
+            <h2>About Section</h2>
+            <article>
+                <h3>Structure & Semantics</h3>
+                <p>This webpage utilizes modern HTML5 structural elements such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+            </article>
+        </section>
+
+        <!-- Media Section with Video and Caption -->
+        <section id="media">
+            <h2>Media Section</h2>
+            <article>
+                <figure>
+                    <video controls width="100%">
+                        <source src="sample-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Figure 1: Sample responsive video demonstrating multimedia embedding.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <article>
+                <p>Explore our internal and external CSS styling, text-decoration properties, and interactive link states.</p>
+            </article>
+        </section>
+
+        <!-- Form Section -->
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <article>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Favourite hobbies:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+                            <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+                            <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+                            <label><input type="checkbox" name="hobbies" value="gaming"> Gaming</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Lab Exercise 4. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
