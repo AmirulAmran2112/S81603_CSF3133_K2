@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    <!-- Pautan Google Fonts untuk Roboto dan Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- 
+      Senarai 10 Ralat yang Dibetulkan (Part 1):
+      1. shop.html (Line 6): Atribut rel="stylesheets" dibetulkan kepada rel="stylesheet".
+      2. shop.html (Line 20): ID jadual id="product" ditukar kepada id="products" supaya sepadan dengan CSS.
+      3. shop.html (Line 21): Sel pengepala pertama yang kosong ditambah nama kolum <th>Item</th>.
+      4. shop.css (Line 2): Ejaan fon 'Robotto' dibetulkan kepada 'Roboto'.
+      5. shop.css (Line 5): Salah ejaan 'bacground-position' dibetulkan kepada 'background-position'.
+      6. shop.css (Line 17): Sintaks pseudo-kelas li:a:hover dibetulkan kepada li a:hover.
+      7. shop.css (Line 18): display: inline dibetulkan kepada display: block untuk pautan menu.
+      8. shop.css (Line 27): Nilai border-collapse: collapsed dibetulkan kepada collapse.
+      9. shop.css (Line 34): nth-child(2) dibetulkan kepada nth-child(even) untuk baris berselang-seli.
+      10. shop.css (Line 37): Pseudo-kelas tr:hovered dibetulkan kepada tr:hover.
+    -->
+
+    <!-- Header dengan Imej Latar Belakang & Teks Putih -->
+    <header>
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- Navigasi Mendatar dengan Kelas Active -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Kandungan Utama dengan latar belakang putih untuk elak teks bertindih -->
+    <main>
+        <section class="content-box">
+            <table id="products">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th class="price-col">Price (RM)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design Basics</td>
+                        <td>Textbook</td>
+                        <td class="price-col">45.00</td>
+                    </tr>
+                    <tr>
+                        <td>A4 Notebook</td>
+                        <td>Stationery</td>
+                        <td class="price-col">6.50</td>
+                    </tr>
+                    <tr>
+                        <td>USB Drive 32GB</td>
+                        <td>Gadget</td>
+                        <td class="price-col">25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Highlighter Set</td>
+                        <td>Stationery</td>
+                        <td class="price-col">9.90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer Terkawal -->
+    <footer>
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+</body>
+</html>

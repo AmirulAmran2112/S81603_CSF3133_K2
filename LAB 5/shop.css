@@ -1,0 +1,121 @@
+/* Tetapan asas badan laman */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografi tajuk menggunakan fon kedua (Merriweather) */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Ketinggian baris untuk kebolehbacaan perenggan */
+p {
+    line-height: 1.6;
+}
+
+/* Kontena senarai bar navigasi */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Item senarai navigasi melintang */
+li {
+    float: left;
+}
+
+/* Pautan di dalam menu navigasi */
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Kesan hover apabila tetikus berada di atas pautan */
+li a:hover {
+    background-color: #111;
+}
+
+/* Gaya khas untuk pautan halaman aktif (Home) */
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* Gaya header dengan imej latar belakang dan teks putih */
+header {
+    background-image: url("books.jpg"); /* Pastikan nama fail imej betul */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Kotak kandungan utama dengan latar belakang putih supaya jadual tidak telus */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.content-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Struktur jadual produk dengan sempadan tunggal tercantum */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Padding dan sempadan sel jadual */
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Warna latar belakang berselang-seli untuk baris genap */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Kesan hover interaktif pada baris jadual */
+#products tr:hover {
+    background-color: #e2e2e2;
+}
+
+/* Pengepala jadual diratakan ke tengah dan huruf besar */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Penjajaran kolum harga ke sebelah kanan */
+.price-col {
+    text-align: right;
+}
+
+/* Gaya footer dengan warna latar belakang lembut dan teks di tengah */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    color: #555;
+}
