@@ -1,0 +1,87 @@
+/* General page styling and centering */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    padding: 20px;
+    max-width: 650px;
+    margin: auto;
+}
+
+h2 {
+    color: #1f2937;
+}
+
+/* Form layout and container styling */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 6px 10px;
+    width: 200px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Button styling with hover effect */
+button {
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 6px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Result and check date styling */
+#result {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#checkDate {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
+/* Grade table styling with borders and header background */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1f2937;
+    color: white;
+}

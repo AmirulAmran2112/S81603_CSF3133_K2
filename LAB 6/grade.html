@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grade Calculator</title>
+    <!-- Link external CSS stylesheet -->
+    <link rel="stylesheet" href="grade.css">
+</head>
+<body>
+    <h2>Student Grade Calculator</h2>
+    
+    <!-- Fixed: added return checkMark() to prevent page reload on invalid submission -->
+    <form name="gradeForm" onsubmit="return checkMark()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="mark">Mark (0-100):</label>
+        <input type="text" id="mark" name="mark"><br>
+        
+        <button type="submit">Check Grade</button>
+        <!-- Extended: Added Random Mark button -->
+        <button type="button" onclick="generateRandomMark()">Random Mark</button>
+    </form>
+
+    <p id="result"></p>
+    <!-- Extended: Element to display the date and time the grade was checked -->
+    <p id="checkDate"></p>
+
+    <!-- Fixed: corrected showtable() to showTable() with a capital T -->
+    <button onclick="showTable()">Show Grade Table</button>
+    <div id="tableContainer"></div>
+
+    <script src="grade.js"></script>
+</body>
+</html>
